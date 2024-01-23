@@ -14391,7 +14391,7 @@ header {
   display: flex;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 @media only screen and (max-width: 575px) {
@@ -14411,6 +14411,7 @@ header {
   line-height: inherit !important;
   padding-left: 0px;
   padding-right: 20px;
+  margin-right: 10px;
 }
 
 @media only screen and (max-width: 575px) {
@@ -14424,7 +14425,7 @@ header {
   width: 10px;
   height: 10px;
   margin-top: -7px;
-  border-color: #ffffff;
+  border-color: #000000;
   right: 4px;
 }
 
@@ -14437,7 +14438,7 @@ header {
 }
 
 .footer__language .nice-select .current {
-  color: #ffffff;
+  color: #0c266c;
   font-weight: 400;
   text-transform: uppercase;
   position: relative;
@@ -14447,6 +14448,7 @@ header {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   content: "\f0ac";
+  color: #0c266c;
   font-size: 18px;
   margin-right: 10px;
 }
@@ -14460,8 +14462,8 @@ header {
 
 .footer__language .nice-select .list {
   position: absolute;
-  top: unset;
-  bottom: 100%;
+  /* top: unset; */
+  /* bottom: 100%; */
   background-color: #0c266c;
   -webkit-box-shadow: 0px 4px 24px 0px rgba(19, 33, 110, 0.5);
   box-shadow: 0px 4px 24px 0px rgba(19, 33, 110, 0.5);
@@ -14531,6 +14533,11 @@ header {
   opacity: 0.4;
   max-width: 15vw;
 }
+.language-select .nice-select {
+  color: #000000;
+}
+
+select[editable] > button { stroke: #f00 !important; }
 
 .footer__animation .home__illustration {
   left: 0px;
